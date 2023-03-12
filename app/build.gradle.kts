@@ -21,8 +21,10 @@ repositories {
 }
 
 dependencies {
-    // This dependency is used by the application.
-    implementation("com.google.guava:guava:31.1-jre")
+    implementation("oauth.signpost:signpost-commonshttp4:2.1.1")
+    implementation("org.apache.httpcomponents:httpclient:4.5.14")
+    implementation("org.apache.commons:commons-configuration2:2.8.0")
+    implementation("commons-beanutils:commons-beanutils:1.9.4") // necessary for commons-configuration2, because this is set as optional there and gradle then doesn't resolve it transitively.
 }
 
 testing {
