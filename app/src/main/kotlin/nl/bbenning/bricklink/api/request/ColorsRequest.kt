@@ -1,6 +1,6 @@
-package nl.bbenning.bricklink.acl.api.request
+package nl.bbenning.bricklink.api.request
 
-import nl.bbenning.bricklink.acl.api.response.ColorsResponse
+import nl.bbenning.bricklink.api.response.ColorsResponse
 
 class ColorsRequest : BrickLinkRequest<ColorsResponse> {
     override val method: BrickLinkRequest.Method = BrickLinkRequest.Method.GET

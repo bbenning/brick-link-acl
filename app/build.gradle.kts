@@ -10,6 +10,7 @@
 plugins {
     // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
     id("org.jetbrains.kotlin.jvm") version "1.8.10"
+    kotlin("plugin.serialization") version "1.8.10"
 
     // Apply the application plugin to add support for building a CLI application in Java.
     application
@@ -25,6 +26,7 @@ dependencies {
     implementation("org.apache.httpcomponents:httpclient:4.5.14")
     implementation("org.apache.commons:commons-configuration2:2.8.0")
     implementation("commons-beanutils:commons-beanutils:1.9.4") // necessary for commons-configuration2, because this is set as optional there and gradle then doesn't resolve it transitively.
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0")
 }
 
 testing {

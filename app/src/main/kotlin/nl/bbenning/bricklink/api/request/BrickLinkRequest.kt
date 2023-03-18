@@ -1,6 +1,6 @@
-package nl.bbenning.bricklink.acl.api.request
+package nl.bbenning.bricklink.api.request
 
-import nl.bbenning.bricklink.acl.api.response.BrickLinkResponse
+import nl.bbenning.bricklink.api.response.BrickLinkResponse
 
 interface BrickLinkRequest<T: BrickLinkResponse<*>>  {
     enum class Method { GET, POST, PUT, DELETE }
